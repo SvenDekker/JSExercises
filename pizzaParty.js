@@ -9,6 +9,10 @@ let totalSlices = pizzas * slices
 let slicesPerPerson = Math.floor(totalSlices / people)
 let leftoverPieces = totalSlices % people
 
-prompt(`${people} people with ${pizzas} pizzas. Each person gets ${slicesPerPerson} slices of pizza. There are ${leftoverPieces} leftover pieces`)
-
+if (slicesPerPerson === 1) {
+    prompt(`${people} people with ${pizzas} pizzas. Each person gets ${slicesPerPerson} slice of pizza. There are ${leftoverPieces} leftover pieces`)
+    
+} else if (slicesPerPerson > 1 || slicesPerPerson === 0) {
+    prompt(`${people} people with ${pizzas} pizzas. Each person gets ${slicesPerPerson} slices of pizza. There are ${leftoverPieces} leftover pieces`)
+}
 

@@ -8,3 +8,4 @@ let years = prompt('Enter the number of years: ')
 let amountAccrued = principal(1 + rate * years)
 
 prompt(`After ${years} years at ${rate}, the investment will be worth $${amountAccrued}`)
+

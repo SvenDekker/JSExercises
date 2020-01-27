@@ -5,10 +5,9 @@
 
 let p = prompt('What is the principal amount? ')
 let r = prompt('What is the rate?')
-let rate = r / 100
 let t = prompt('What is the number of years?')
 let n = prompt('What is the number of times the interest is compounded per year?')
 
-let compoundInterest = p * Math.pow((1 + (rate / n)), (n * t)).toFixed(5)
+let compoundInterest = p * Math.pow((1 + ((r / 100) / n)), (n * t)).toFixed(5)
 prompt(`€${p} invested at ${r}% for ${t} years compounded ${n} times per year is €${compoundInterest}.`)
 
